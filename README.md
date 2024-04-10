@@ -2,7 +2,7 @@
 
 Aprenderemos lo siguiente: 
 
-### Semana 01 - GIT y GITHUB: Comandos.
+#### Semana 01 - GIT y GITHUB: Comandos.
    * git status
    * git add index.html
    * git commit -m "Mi primera página"
