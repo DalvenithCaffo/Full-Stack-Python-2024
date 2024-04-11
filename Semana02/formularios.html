@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios + Inputs + Validaciones</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
+</head>
+<body>
+    <main>
+        <h1>Formularios + Inputs + Validaciones</h1>
+        <p>Estamos usando estilos de css de la pagina picocss</p>
+        <pre>
+            data-theme="dark"/data-theme="Ligth" 
+                > en la etiqueta html.
+        </pre>
+        <form action="">
+            
+            <h2>Inputs</h2>
+            <label for="text1">Input tipo texto</label>
+            <input type="text" name="texto" id="text1" placeholder="Ingrese texto">
+
+            <label>
+                Input (Solo lectura), usamos el readonly values para que sea de solo lectura.
+                <input type="text" placeholder="Input solo lectura" readonly value>
+            </label>
+            
+            <label>
+                Input (desactivad) 
+                <input type="text" placeholder="Input desactivado" disabled>
+            </label>
+
+            <label>
+                solo numero se permite el ingreso
+                <input type="number" placeholder="Ingrese edad">
+            </label>
+
+            <label>
+                Input tipo email
+                <input type="email" placeholder="Ingrese correo" name="email">
+            </label>
+
+            <label>
+                Input tipo range (edad)
+                <input type="range" min="1" max="100">
+            </label>
+            
+            <label>
+                Input tipo telefono
+                <input type="tel" placeholder="Ingrese telefono (051) 968380149">
+            </label>
+
+            <label for="">
+                Input tipo url
+                <input type="url" placeholder="Sitio web">
+            </label>
+            
+            <label for="">
+                <input type="password" placeholder="Password">
+            </label>
+
+            <label for="">
+                <input type="color" >
+            </label>
+
+            <label for="">
+                <input type="search">
+            </label>
+
+            <label for="">
+                <input type="file" accept=".jpg, .jpeg" multiple >
+            </label>
+            
+            <input type="hidden" value="datos-ocultos">
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Limpiar">
+
+        </form>
+
+        <form action="">
+            <h2>Input tipo fechas</h2>
+            <label for="">
+                Input tipo datetime-local (Fecha y hora) 
+                <input type="datetime-local" name="fecha" id="">
+            </label>
+
+            <label for="">
+                Input tipo date (día)
+                <input type="date" name="dia" id="">
+            </label>
+
+            <label for="">
+                Input tipo week (semana)
+                <input type="week" name="semana" id="">
+            </label>
+
+            <label for="">
+                Input tipo month (mes)
+                <input type="month" name="mes" id="">
+            </label>
+            
+            <input type="submit" value="Guardar">
+        </form>
+        
+        <form action="">
+            <h2>Textarea</h2>
+            <label for="">
+                <textarea placeholder="Esribe una descripción sobre ti..." rows="15", cols="4" name="biografia"></textarea>
+            </label>
+
+            <label for="">
+                <textarea name="biografia2" cols="4" rows="10" placeholder="Esribe una descripción sobre ti..."  disabled></textarea>
+            </label>
+            <input type="submit" value="Guardar">
+        </form>
+
+        <form action="">
+            <h2>Selects</h2>
+
+            <label for="">
+                COmida faovrita seleccionar
+                <select name="comidas" id="">
+                    <option value=""> Selecciona tu comida favorita...</option>
+                    <option value="fr"> Francesa</option>
+                    <option value="it"> Italiana</option>
+                    <option value="pe"> Peruana</option>
+                    <option value="jp"> Jponesa</option>
+                    <option value="th"> Tailandesa</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+
+        <form action="">
+            <h2>Checkboxes</h2>
+
+            <h3>Lenguaje de preferencia</h3>
+            <label for="">
+                <input type="checkbox" name="english" value="en" checked> Inglés
+            </label>
+            <label for="">
+                <input type="checkbox" name="spanish" value="es" > Español
+            </label>
+            <label for="">
+                <input type="checkbox" name="dothraki" value="do" disabled> dothraki
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+        <form action="">
+            <h2>Radio Button</h2>
+
+            <label for="">
+                <input type="radio" name="lenguaje1" value="en" id=""> Inglés
+            </label>
+            <label for="">
+                <input type="radio" name="lenguaje1" value="es" checked> Español
+            </label>
+            <label for="">
+                <input type="radio" name="lenguaje1" value="du"> Neelandés
+            </label>
+            <label for="">
+                <input type="radio" name="lenguaje1" value="kl" disabled> klingon
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+        <form action="">
+            <h2>Validaciones</h2>
+
+            <label for="">
+                Nombre
+                <input type="text" name="nombre" minlength="3" maxlength="15" required>
+            </label>
+
+            <label for="">
+                Email 
+                <input type="email" name="email" required>
+            </label>
+
+            <label for="">
+                Edad 
+                <input type="number" name="edad" required min="1" max="99">
+            </label>
+            <label for="">
+                Telefono 
+                <input type="tel" name="telefono" placeholder="Ejem: +051 968380149" required pattern="\+[0-9]{3} [0-9]{9}">
+            </label>
+
+            <label for="">
+                COmida faovrita seleccionar
+                <select name="comidas" required>
+                    <option value=""> Selecciona tu comida favorita...</option>
+                    <option value="fr"> Francesa</option>
+                    <option value="it"> Italiana</option>
+                    <option value="pe"> Peruana</option>
+                    <option value="jp"> Jponesa</option>
+                    <option value="th"> Tailandesa</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+</body>
+</html>
