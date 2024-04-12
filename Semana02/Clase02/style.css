@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif; 
+    height: 100vh; /* Viewport height alto visible de la pantalla*/
+    display: flex;/*permite alinear uno tras otro los objetos*/
+    justify-content: center; /*justify-content centra el objeto horizontalmente*/
+    align-items: center; /*centra los objetos verticalmente, y teniendo el body 100% lo centra.*/
+  }
+
+  main{
+    /*background-color: red;*/
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+  }
+
+  .photo{
+    background-color: blue;
+    /*width: 50%;*/
+    width: 350px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px 0px 0px 14px;
+    box-shadow: 1px 1px 3px #ccc;
+  }
+  .content{
+    background-color: hsl(0,0%,100%);
+    /*width: 50%;*/
+    width: 280px;
+    padding: 28px;
+    border-radius: 0px 14px 14px 0px;
+    box-shadow: 1px 1px 3px #ccc;
+  }
+  .content h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: hsl(228,12%,48%);
+  }
+  .content h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: hsl(212,21%,14%);
+  }
+
+  .content p {
+    color: hsl(228,12%,48%);
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .content div{
+    display: flex;
+    align-items: center;
+    gap:14px;
+  }
+  .content span{
+        font-family:"Fraunces", serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: hsl(158,36%,37%);
+  }
+  .content s{
+    color: hsl(228, 12%, 48%);
+  }
+
+  .content button{
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: hsl(158,36%,37%);
+    color: hsl(0,0%,100%);
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .content button:hover{
+    background-color: hsl(158,52%,20%);
+  }
+
+/*
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.fraunces-<uniquifier> {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+*/
