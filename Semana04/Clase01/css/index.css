@@ -38,7 +38,7 @@ html{
 }
 
 body{
-   /* background-color: yellow;*/ 
+    /*background-color: yellow;*/
 }
 
 img{
@@ -198,6 +198,11 @@ img{
     cursor: pointer;
 
     box-shadow: 0 0 30px var(--primary-pale-orange);
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+    ;
 }
 
 .product__add-to-cart svg path{
