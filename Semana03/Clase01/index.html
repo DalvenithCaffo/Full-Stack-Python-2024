@@ -8,8 +8,8 @@
 </head>
 <body>
 
-  <header class="header wrapper"> 
-    <img src="./images/logo.svg" alt="">
+  <header id="top" class="header wrapper"> 
+    <img class="header__logo" src="./images/logo.svg" alt="">
 
     <nav> 
       <ul class="header__nav"> <!-- los valores header(padre)__nav(hijo)-->
@@ -134,7 +134,7 @@
 
  <footer class="footer">
 
-  <section class="early-access">
+  <section id="earlyAccess" class="early-access">
     <h2>Get early access today</h2>
 
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
@@ -173,7 +173,7 @@
         <a href="#">Blog</a>
       </div>
       <div class="footer-info__links">
-        <a href="#">Contact Us</a>
+        <a href="#earlyAccess">Contact Us</a>
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
       </div>
@@ -193,6 +193,6 @@
     
 
  </footer>
-  
+  <a href="#top" class="top">ir arriba</a>
 </body>
 </html>

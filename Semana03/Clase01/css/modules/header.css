@@ -1,0 +1,28 @@
+
+.header{
+    /*border: 1px solid red;*/
+    font-family: var(--font-primary);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; /*1 rem seria el valor del tamaño de texto padre, sino tiene asume 16pixeles del pordefecto del navegador */
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction: column;
+    }
+}
+
+.header__logo{
+    width: 176px;
+}
+
+.header__nav{
+    /*border: 1px solid yellow;*/
+    list-style: none;
+    padding: 10px;
+    margin: 19px;
+    display: flex;
+    gap: 2rem; /* 1 rem = 14px (html)*/
+}

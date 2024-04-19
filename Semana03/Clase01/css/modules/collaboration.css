@@ -1,0 +1,18 @@
+
+.collaboration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    background-color: var(--primary-dark-blue-main);
+    padding-top: 8rem;
+}
+
+/*MEDIAS QUERYS, PARA CELULARES Y TABLETS*/
+@media (max-width: 768px){
+    .collaboration{
+        flex-direction: column;
+    }
+
+}

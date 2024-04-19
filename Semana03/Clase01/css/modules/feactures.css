@@ -1,0 +1,35 @@
+
+.features{
+    display: grid;
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--primary-dark-blue-main);
+}
+/*MEDIAS QUERYS, PARA CELULARES Y TABLETS*/
+@media (max-width: 768px){
+    .features{
+        grid-template-columns: 340px;
+    }
+}
+.feature {
+    /*text-align: center;*/
+    display: flex;
+    flex-direction:column;/*la propiedad por defecto es row (horizontal) y column para vertical*/
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature__title{
+    /*border: 1px solid red;*/
+   font-family: var(--font-primary);
+   /*margin-top: 1.3rem;*/
+   
+}
+.feature__text{
+    /*border: 1px solid green;*/
+    font-family: var(--font-secundary);
+    /*margin-top: 1rem;*/
+    text-align: center;
+    
+}

@@ -1,0 +1,26 @@
+
+html{
+    font-size:var(--font-size);
+}
+
+body{
+    background-color: var(--primary-dark-blue-intro);
+    color: var(--neutral-white);
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: var(--font-weight-bold);
+    text-decoration: underline;
+}
+
+img {
+    /*todo: responsive web design (RWD) para imagenes, simpre tener esto para que se adapten las imagenes en moviles*/
+    max-width: 100%;
+    height: auto;
+}

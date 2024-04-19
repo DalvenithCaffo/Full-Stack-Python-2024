@@ -1,0 +1,86 @@
+
+.hero{
+    /*border: 1px solid red;*/
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /*background-color: var(--primary-dark-blue-intro);*/
+    background-size: contain;/*se adapta al contenido de la pantalla*/
+    
+}
+@media (max-with: 768px) {
+    .hero{
+        background-image: url(../../images/bg-curvy-mobile.svg);
+    }
+}
+
+
+.hero__title{
+    /*color:green;*/
+    /*width: 720px; //para hacer responsive debemos aplicar el MIN(del total de la pagina -3 de espacios con un minimo de 720)*/
+    width: min(100% - 3rem, 720px);
+
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2.5rem;
+
+    text-align: center;
+}
+
+.hero__text{
+    /*width: 720px; //para hacer responsive debemos aplicar el MIN(del total de la pagina -3 de espacios con un minimo de 720)*/
+    width: min(100% - 3rem, 720px);
+
+    font-family: var(--font-secundary);
+    font-size: 1.2rem;
+    padding:0 7rem;
+
+    text-align: center;
+}
+/*MEDIA QUERY, SE APLICA PARA DETERMINADOS DISPOSITIVOS
+576PX --> PANTALLAS PEQUEÑAS (CELULARES)
+768PX --> PANTALLAS PEQUEÑAS (TABLETS Y CELULARES)
+992PX --> PATALLAS MEDIANAS (DESKTOP)
+1200PX -->PANTALLAS GRANDES (DESKTOP, TVS)
+*/
+@media (max-width: 768px){
+    .hero__text{
+        padding: 0;
+    }
+}
+.hero__button{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    border: 0;
+    border-radius: 7rem;
+    padding: 1rem 1.5rem;
+    min-width: 220px;
+
+    background: 
+        linear-gradient(
+            90deg,
+            var(--accent-cyan) 0%,
+            var(--accent-blue) 35%
+        )    
+    ;
+    transition: all .5s ease-in-out;
+}
+
+.hero__button:hover {
+    background: none;
+    background: 
+    linear-gradient(
+        90deg,
+        var(--accent-cyan) 35%,
+        var(--accent-blue) 100%
+    )    
+;
+    cursor: pointer;
+}
